@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Tanaman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        
+        <div class="logo-container">
+            <img src="img/Logo Gambar & Tulisan.png" alt="Company Logo" class="logo">
+        </div>
+        <main>
+                <div class="plant-code-overlay">WAL1960</div> <!-- Kode Tanaman di atas foto -->
+            </div>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="img/1960.png" alt="Image 1" class="popup-image" onclick="showPopup('img/1960.png')">
+            <img src="img/1960.png" alt="Image 2" class="popup-image" onclick="showPopup('img/1960.png')">
+        </div>
+
+        <div class="plant-info">
+            <div class="centered-content">
+                <h2>INFORMASI BUNGA</h2>
+                <p><span>Kode Tanaman:</span>WAL1960</p>
+                <p><span>Warna Bunga:</span> Novelty</p>
+                <p><span>Diameter Bunga:</span> 10 CM</p>
+                <p><span>Tinggi Bunga:</span> 80 CM</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img src="" alt="Popup Image" class="popup-content" id="popupImg">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
